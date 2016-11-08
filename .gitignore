@@ -1,6 +1,11 @@
+*.class
+*.war
+*.ear
+*.jar
 *.iml
-idea
 target
+atc-7.0.59
+.idea
 .settings
 .project
 .classpath
