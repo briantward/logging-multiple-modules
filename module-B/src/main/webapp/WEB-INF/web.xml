@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
          version="2.5">
 <listener>
-    <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
+    <listener-class>com.dataxf.moduleB.ModuleBLog4jContextLoader</listener-class>
 </listener>
 <context-param>
     <param-name>log4jConfigLocation</param-name>
