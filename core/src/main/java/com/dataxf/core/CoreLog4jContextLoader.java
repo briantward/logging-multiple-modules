@@ -3,6 +3,8 @@ package com.dataxf.core;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.PropertyConfigurator;
 import org.apache.log4j.xml.DOMConfigurator;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
@@ -29,6 +31,8 @@ public class CoreLog4jContextLoader implements ServletContextListener {
         else {
             PropertyConfigurator.configure(url);
         }
+        Logger logger = LoggerFactory.getLogger(CoreLog4jContextLoader.class);
+        logger.debug("Loaded log4j!");
     }
 
     public void contextDestroyed(ServletContextEvent event) {
