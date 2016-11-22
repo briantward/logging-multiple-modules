@@ -19,7 +19,7 @@
 	<logger name="com.dataxf">
 		<level value="debug" />
 	</logger>
-	
+
 	<root>
 		<level value="info" />
 		<appender-ref ref="STDOUT"/>
